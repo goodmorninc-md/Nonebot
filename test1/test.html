@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>作业列表</title>
+<link href="/mooc2/css/work-list.css?v=2022-1021-1500" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/mooc2/css/taskStudent_pop.css" />
+<script type="text/javascript" src="/js/common/jquery.min.js"></script>
+<script type="text/javascript" src="/js/common/jquery-migrate.min.js"></script><script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="/mooc2/js/poplayout.js"></script>
+<script type="text/javascript" src="/mooc2/js/xlPaging.js"></script>
+<script src="/js/ServerHost.js"></script>
+<style>
+.check_repeat {display:inline-block;padding: 0 12px;background: #F2F4F7;border-radius:35px;line-height: 30px;color: #474C59;font-size: 14px;cursor: pointer;}
+.check_repeat i{display:inline-block;width:94px;height:18px;float:left;margin:6px 10px 0 0;}
+.check_repeat i img{width:100%;height:100%;display: block;}
+</style>
+</head>
+<body style="background: transparent;">
+<div id="workFocus" tabindex="0" aria-label="作业"></div>
+<div class="box">
+    <div class="content">
+        <div class="main task-list">
+            <div class="top-back" tabindex="0">
+                <h2>陈翔翔周一-S0718060-3</h2>
+            </div>
+            
+            <input type="hidden" id="courseId" value="219659250" />
+			<input type="hidden" id="classId" value="44454887" />
+			<input type="hidden" id="cpi" value="149872993" />
+			<input type="hidden" id="enc" value="915518fd36c3020db8a929114bb19f84" />
+			<input type="hidden" id="status" value="0" />
+            
+            <div class="has-content" style="display: block;">
+                <div class="filter">
+					<div class="check_repeat fr" onclick="gotoDaya();"><i><img src="/mooc2/images/daya.png"></i>提交的作业将经过大雅相似度分析系统，请勿抄袭</div>
+                    <span class="title">筛选</span>
+                    <span class="ipt-radio circl-choosed" tabindex="0" aria-label="全部" role="tab">
+						<input name="group-radio" type="radio" onclick="changeStatus(this);" checked  data="0"/><i class="icon-radio"></i>
+					</span>
+                    <div class="operate-list-group fs12 color181E33 lineheight20 inlineBlock">全部</div>
+                    
+                    <span class="ipt-radio circl-choosed" tabindex="0" aria-label="已完成" role="tab">
+						<input name="group-radio" type="radio" onclick="changeStatus(this);"  data="2"/><i class="icon-radio"></i>
+					</span>
+                    <div class="operate-list-group fs12 color181E33 lineheight20 inlineBlock">已完成</div>
+                    
+                    <span class="ipt-radio circl-choosed" tabindex="0" aria-label="未完成" role="tab">
+						<input name="group-radio" type="radio" onclick="changeStatus(this);"  data="1"/><i class="icon-radio"></i>
+					</span>
+                    <div class="operate-list-group fs12 color181E33 lineheight20 inlineBlock">未完成</div>
+                </div>
+                
+                                <div class="bottomList" tabindex="0" aria-label="作业列表">
+                    <ul>
+                    																														
+													
+																																						
+                    	
+                    	<li onclick="goTask(this);" data="https://mooc1.chaoxing.com/mooc2/work/task?courseId=219659250&classId=44454887&cpi=149872993&workId=17154946&answerId=50735386&enc=a1826314254f92f5f57ae17eb3f7e664">
+                            <div class="tag icon-zy-g"></div>
+                            <div class="right-content" tabindex="0">
+                                <p class="overHidden2 fl">扭摆实验预习习题</p>
+                                                                <div class="clearfix"></div>
+                                <p class="status fl">已完成</p>
+
+																	<a href="javascript:;" onclick="answerList(17154946, 50735386, 'a1826314254f92f5f57ae17eb3f7e664');" class="listSubmit fl insightBtn"><i><img src="/mooc2/images/answer-list.png"></i>作答记录</a>
+								
+																<a href="https://stat2-ans.chaoxing.com/study-knowledge/ans?courseid=219659250&cpi=149872993&clazzid=44454887&ut=s&relationId=17154946&type=2" class="listSubmit fl insightBtn" target="_blank"><i><img src="/mooc2/images/insight.png"></i>智能分析</a>
+								                            </div>
+                                                        <div class="clearfix"></div>
+                        </li>
+                        																													
+													
+																																						
+                    	
+                    	<li onclick="goTask(this);" data="https://mooc1.chaoxing.com/mooc2/work/task?courseId=219659250&classId=44454887&cpi=149872993&workId=17154929&answerId=50735383&enc=ad6b181844ca225d2b989f4605365cb1">
+                            <div class="tag icon-zy-g"></div>
+                            <div class="right-content" tabindex="0">
+                                <p class="overHidden2 fl">霍尔效应实验预习习题</p>
+                                                                <div class="clearfix"></div>
+                                <p class="status fl">已完成</p>
+
+																	<a href="javascript:;" onclick="answerList(17154929, 50735383, 'ad6b181844ca225d2b989f4605365cb1');" class="listSubmit fl insightBtn"><i><img src="/mooc2/images/answer-list.png"></i>作答记录</a>
+								
+																<a href="https://stat2-ans.chaoxing.com/study-knowledge/ans?courseid=219659250&cpi=149872993&clazzid=44454887&ut=s&relationId=17154929&type=2" class="listSubmit fl insightBtn" target="_blank"><i><img src="/mooc2/images/insight.png"></i>智能分析</a>
+								                            </div>
+                                                        <div class="clearfix"></div>
+                        </li>
+                        																													
+													
+																																						
+                    	
+                    	<li onclick="goTask(this);" data="https://mooc1.chaoxing.com/mooc2/work/task?courseId=219659250&classId=44454887&cpi=149872993&workId=17154920&answerId=50735376&enc=aefea671787a3772060ac465e38bc9fa">
+                            <div class="tag icon-zy-g"></div>
+                            <div class="right-content" tabindex="0">
+                                <p class="overHidden2 fl">光的等厚干涉（牛顿环）习题</p>
+                                                                <div class="clearfix"></div>
+                                <p class="status fl">已完成</p>
+
+																	<a href="javascript:;" onclick="answerList(17154920, 50735376, 'aefea671787a3772060ac465e38bc9fa');" class="listSubmit fl insightBtn"><i><img src="/mooc2/images/answer-list.png"></i>作答记录</a>
+								
+																<a href="https://stat2-ans.chaoxing.com/study-knowledge/ans?courseid=219659250&cpi=149872993&clazzid=44454887&ut=s&relationId=17154920&type=2" class="listSubmit fl insightBtn" target="_blank"><i><img src="/mooc2/images/insight.png"></i>智能分析</a>
+								                            </div>
+                                                        <div class="clearfix"></div>
+                        </li>
+                        																													
+													
+																																						
+                    	
+                    	<li onclick="goTask(this);" data="https://mooc1.chaoxing.com/mooc2/work/task?courseId=219659250&classId=44454887&cpi=149872993&workId=17154910&answerId=50725485&enc=25829ecb91fac4607992326d60a53967">
+                            <div class="tag icon-zy-g"></div>
+                            <div class="right-content" tabindex="0">
+                                <p class="overHidden2 fl">空气比热容比实验习题</p>
+                                                                <div class="clearfix"></div>
+                                <p class="status fl">已完成</p>
+
+																	<a href="javascript:;" onclick="answerList(17154910, 50725485, '25829ecb91fac4607992326d60a53967');" class="listSubmit fl insightBtn"><i><img src="/mooc2/images/answer-list.png"></i>作答记录</a>
+								
+																<a href="https://stat2-ans.chaoxing.com/study-knowledge/ans?courseid=219659250&cpi=149872993&clazzid=44454887&ut=s&relationId=17154910&type=2" class="listSubmit fl insightBtn" target="_blank"><i><img src="/mooc2/images/insight.png"></i>智能分析</a>
+								                            </div>
+                                                        <div class="clearfix"></div>
+                        </li>
+                        																													
+													
+																																						
+                    	
+                    	<li onclick="goTask(this);" data="https://mooc1.chaoxing.com/mooc2/work/task?courseId=219659250&classId=44454887&cpi=149872993&workId=15376366&answerId=50410695&enc=6777b5e0bda1843b0041ea5dc64cc2df">
+                            <div class="tag icon-zy-g"></div>
+                            <div class="right-content" tabindex="0">
+                                <p class="overHidden2 fl">大学物理实验B绪论作业</p>
+                                                                <div class="clearfix"></div>
+                                <p class="status fl">已完成</p>
+
+																	<a href="javascript:;" onclick="answerList(15376366, 50410695, '6777b5e0bda1843b0041ea5dc64cc2df');" class="listSubmit fl insightBtn"><i><img src="/mooc2/images/answer-list.png"></i>作答记录</a>
+								
+																<a href="https://stat2-ans.chaoxing.com/study-knowledge/ans?courseid=219659250&cpi=149872993&clazzid=44454887&ut=s&relationId=15376366&type=2" class="listSubmit fl insightBtn" target="_blank"><i><img src="/mooc2/images/insight.png"></i>智能分析</a>
+								                            </div>
+                                                        <div class="clearfix"></div>
+                        </li>
+                                            </ul>
+                </div>
+                            </div>
+            <div style="width:100%;height:110px;"></div>
+            <div class="pagePosition">
+				<div class="pageDiv" id="page"></div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<div class="maskDiv popMoveShowHide" style="display:none;" id="recordList">
+	<div class="popDiv wid640 popMove">
+		<div class="popHead">
+			<a href="javascript:;" onclick="closeAnswers();" class="popClose popMoveDele fr" style="margin-top: 5px;"><img src="/mooc2/images/popClose.png" /></a>
+			<p class="fl" style="color: #181E33;font-size: 18px;">作答记录</p>
+		</div>
+		<div class="het62"></div>
+				<div id="content"></div>
+	</div>
+</div>
+<script>
+
+var courseId = $("#courseId").val();
+var classId = $("#classId").val();
+var cpi = $("#cpi").val();
+var enc = $("#enc").val();
+var status = $("#status").val();
+
+	$("#page").html("");
+
+function goTask(obj) {
+	var url = $(obj).attr("data");
+	window.open(url, '_blank');
+}
+
+function changeStatus(obj) {
+	var data = $(obj).attr("data");
+	location.href = "/mooc2/work/list?courseId=" + courseId + "&classId=" + classId + "&cpi=" + cpi + "&enc=" + enc + "&status=" + data;
+}
+
+$(function() {
+	$(".insightBtn").click(function(event) {
+		event.stopPropagation();
+	});
+
+	$(".bottomList ul li").each(function() {
+		var PLHeight = $(this).find(".right-content p.status").height();
+		var PHeight = $(this).find(".right-content p:first-child").height();
+		if (PLHeight == null) {
+			var marginTop = (40 - PHeight) / 2
+			$(this).find(".right-content p:first-child").css("margin-top", marginTop + "px");
+		}
+	});
+});
+
+function gotoDaya() {
+	var url = ServerHost.dayaDomain;
+	window.open(url, "_blank");
+}
+
+var recordLock = 0
+function answerList(workId, answerId, enc) {
+	if(recordLock == 1) {
+		return;
+	}
+	recordLock = 1;
+
+	$.ajax({
+		type : "get",
+		url : "/mooc2/work/answer-list",
+		dataType : "html",
+		data : {
+			courseId : courseId,
+			classId : classId,
+			cpi : cpi,
+			workId : workId,
+			answerId : answerId,
+			enc : enc
+		},
+		success : function(data) {
+			$("#content").html(data);
+			$(".popSetupShowHide").fullFadeIn();
+			$("#recordList").show();
+			MoveFixed();
+		}
+	});
+}
+
+function closeAnswers() {
+	$("#recordList").hide();
+	$('.popSetupShowHide').fullFadeOut();
+	recordLock = 0;
+}
+
+function MoveFixed() {
+	$('.popMove').css({
+		top : function() {
+			return ($(window).height() - $(this).height()) / 2;
+		},
+		left : function() {
+			return ($(window).width() - $(this).width()) / 2;
+		}
+	});
+
+	$("#boxscroll").niceScroll({
+		cursorborder : "",
+		cursorcolor : "#D9DDE1",
+		boxzoom : false
+	});
+}
+
+$(function(){
+	$('#workFocus').focus();
+})
+</script>
+</script>
+</body>
+</html>
+
